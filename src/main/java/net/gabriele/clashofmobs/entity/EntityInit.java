@@ -50,4 +50,5 @@ public final class EntityInit {
     public static final RegistryObject<EntityType<PoisonEntity>> POISON_AREA =
             ENTITIES.register("poison_area", ()->EntityType.Builder.of(PoisonEntity::new,
                             MobCategory.MISC).setShouldReceiveVelocityUpdates(true).sized(0.1f,0.1f)
-                    .updateInterval(3).build(new ResourceLocation(Clashofmobs.MOD_ID,"poison_area").toString()));}
+                    .updateInterval(3).build(new ResourceLocation(Clashofmobs.MOD_ID,"poison_area").toString()));
+}

@@ -29,6 +29,7 @@ public class PoisonEntity extends GenericAreaEntity {
         this.DURATION = 400;
     }
 
+
     @Override
     public void baseTick() {
         super.baseTick();
