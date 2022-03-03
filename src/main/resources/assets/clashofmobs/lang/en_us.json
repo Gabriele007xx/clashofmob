@@ -1,0 +1,27 @@
+{
+  "block.clashofmobs.coc_grass": "CoC grass",
+  "block.clashofmobs.coc_stone": "CoC stone",
+
+  "item.clashofmobs.elixir": "Elixir",
+  "item.clashofmobs.dark_elixir": "Dark Elixir",
+  "item.clashofmobs.dragon_spawn_egg": "Spawn Dragon",
+  "item.clashofmobs.hog_rider_spawn_egg": "Spawn Hog Rider",
+  "item.clashofmobs.archer_spawn_egg": "Spawn Archer",
+  "item.clashofmobs.wall_breaker_spawn_egg": "Spawn Wall Breaker",
+  "item.clashofmobs.archer_tower_spawn_egg": "Spawn Archer Tower",
+  "item.clashofmobs.elixir_boots": "Elixir Boots",
+  "item.clashofmobs.elixir_leggings": "Elixir Leggings",
+  "item.clashofmobs.elixir_chestplate": "Elixir Chestplate",
+  "item.clashofmobs.elixir_helmet": "Elixir Helmet",
+  "item.clashofmobs.dark_elixir_boots": "Dark Elixir Boots",
+  "item.clashofmobs.dark_elixir_leggings": "Dark Elixir Leggings",
+  "item.clashofmobs.dark_elixir_chestplate": "Dark Elixir Chestplate",
+  "item.clashofmobs.dark_elixir_helmet": "Dak Elixir Helmet",
+  "item.clashofmobs.dark_sword": "Dark Sword",
+
+  "entity.clashofmobs.dragon": "Dragon",
+  "entity.clashofmobs.hog_rider": "Hog Rider",
+  "entity.clashofmobs.archer": "Archer",
+  "entity.clashofmobs.wall_breaker": "Wall Breaker",
+  "entity.clashofmobs.archer_tower": "Archer Tower"
+}
