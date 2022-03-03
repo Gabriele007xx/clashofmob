@@ -5,6 +5,8 @@ import net.gabriele.clashofmobs.entity.EntityInit;
 import net.gabriele.clashofmobs.item.custom.DEModArmorItem;
 import net.gabriele.clashofmobs.item.custom.EModArmorItem;
 import net.gabriele.clashofmobs.item.custom.ModTiers;
+import net.gabriele.clashofmobs.spells.Effect;
+import net.gabriele.clashofmobs.spells.PoisonSpell;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
@@ -27,6 +29,8 @@ public class ModItems {
     public static final RegistryObject<Item> DARK_SWORD = ITEMS.register("dark_sword",
             ()->new SwordItem(ModTiers.DARK_ELIXIR,3,1f,new Item.Properties()
                     .tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<Item> POISON_SPELL_ITEM = ITEMS.register("poison_spell_item",
+            ()->new PoisonSpell(1,1,2, Effect.HARMFUL));
         // spawn eggs
         public static final RegistryObject<ForgeSpawnEggItem> DRAGON_SPAWN_EGG =
                 ITEMS.register("dragon_spawn_egg",()-> new ForgeSpawnEggItem(EntityInit.DRAGON,0x833EFB,0x683EFB,new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
