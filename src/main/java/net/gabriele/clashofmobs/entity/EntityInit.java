@@ -47,8 +47,14 @@ public final class EntityInit {
             ENTITIES.register("witch_coc", ()->EntityType.Builder.of(WitchEntity::new,
                             MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).sized(1f,2f)
                     .updateInterval(3).build(new ResourceLocation(Clashofmobs.MOD_ID,"witch_coc").toString()));
+    //AoE spells
     public static final RegistryObject<EntityType<PoisonEntity>> POISON_AREA =
             ENTITIES.register("poison_area", ()->EntityType.Builder.of(PoisonEntity::new,
                             MobCategory.MISC).setShouldReceiveVelocityUpdates(true).sized(0.1f,0.1f)
                     .updateInterval(3).build(new ResourceLocation(Clashofmobs.MOD_ID,"poison_area").toString()));
+    //rebegin tropps
+    public static final RegistryObject<EntityType<PekkaEntity>> PEKKA =
+            ENTITIES.register("pekka", ()->EntityType.Builder.of(PekkaEntity::new,
+                            MobCategory.MISC).setShouldReceiveVelocityUpdates(true).sized(0.1f,0.1f)
+                    .updateInterval(3).build(new ResourceLocation(Clashofmobs.MOD_ID,"pekka").toString()));
 }

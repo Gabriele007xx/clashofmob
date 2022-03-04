@@ -41,6 +41,7 @@ public class XbowEntity extends AbstractSkeleton{
         this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, WallBreakerEntity.class, true));
         this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, HogRiderEntity.class, true));
         this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, ArcherEntity.class, true));
+        this.targetSelector.addGoal(2, new NearestAttackableTargetGoal<>(this, PekkaEntity.class, true));
     }
     @Override
     public SoundSource getSoundSource() {

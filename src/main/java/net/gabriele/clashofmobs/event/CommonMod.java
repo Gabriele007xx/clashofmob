@@ -21,6 +21,7 @@ public class CommonMod {
          event.put(EntityInit.XBOW.get(), XbowEntity.createAttributes().build());
          event.put(EntityInit.WITCH.get(), WitchEntity.createAttributes().build());
          event.put(EntityInit.POISON_AREA.get(), PoisonEntity.createAttributes().build());
+         event.put(EntityInit.PEKKA.get(), PekkaEntity.createAttributes().build());
 
      }
 

@@ -3,6 +3,7 @@ package net.gabriele.clashofmobs.event;
 import net.gabriele.clashofmobs.Clashofmobs;
 import net.gabriele.clashofmobs.entity.ArcherTowerEntity;
 import net.gabriele.clashofmobs.entity.EntityInit;
+import net.gabriele.clashofmobs.entity.pekka.PekkaModel;
 import net.gabriele.clashofmobs.entity.render.AoE.poison.PoisonModel;
 import net.gabriele.clashofmobs.entity.render.AoE.poison.PoisonRenderer;
 import net.gabriele.clashofmobs.entity.render.DragonEntityModel;
@@ -13,6 +14,7 @@ import net.gabriele.clashofmobs.entity.render.archertower.ArcherTowerModel;
 import net.gabriele.clashofmobs.entity.render.archertower.ArcherTowerRenderer;
 import net.gabriele.clashofmobs.entity.render.hogrider.HogRiderModel;
 import net.gabriele.clashofmobs.entity.render.hogrider.HogRiderRenderer;
+import net.gabriele.clashofmobs.entity.render.pekka.PekkaRender;
 import net.gabriele.clashofmobs.entity.render.valkyrie.ValkyrieModel;
 import net.gabriele.clashofmobs.entity.render.valkyrie.ValkyrieRenderer;
 import net.gabriele.clashofmobs.entity.render.wallbreaker.WallBreakerModel;
@@ -43,6 +45,7 @@ public final class ClientEvent {
         event.registerLayerDefinition(XbowModel.LAYER_LOCATION, XbowModel::createBodyLayer);
         event.registerLayerDefinition(WitchModel.LAYER_LOCATION, WitchModel::createBodyLayer);
         event.registerLayerDefinition(PoisonModel.LAYER_LOCATION, PoisonModel::createBodyLayer);
+        event.registerLayerDefinition(PekkaModel.LAYER_LOCATION, PekkaModel::createBodyLayer);
     }
     @SubscribeEvent
     public static void registerRenders(EntityRenderersEvent.RegisterRenderers event)
@@ -56,6 +59,7 @@ public final class ClientEvent {
         event.registerEntityRenderer(EntityInit.XBOW.get(), XbowRenderer::new);
         event.registerEntityRenderer(EntityInit.WITCH.get(), WitchRenderer::new);
         event.registerEntityRenderer(EntityInit.POISON_AREA.get(), PoisonRenderer::new);
+        event.registerEntityRenderer(EntityInit.PEKKA.get(), PekkaRender::new);
     }
 
 }
