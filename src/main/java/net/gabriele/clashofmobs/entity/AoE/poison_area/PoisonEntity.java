@@ -1,5 +1,6 @@
 package net.gabriele.clashofmobs.entity.AoE.poison_area;
 
+import net.gabriele.clashofmobs.clientonly.particle.ParticleList;
 import net.gabriele.clashofmobs.entity.AoE.GenericAreaEntity;
 import net.gabriele.clashofmobs.spells.Effect;
 import net.minecraft.world.damagesource.DamageSource;
@@ -44,6 +45,14 @@ public class PoisonEntity extends GenericAreaEntity {
         double z = this.getZ();
         Entity entity = this;
         Level world = this.level;
+        for (int l = 0; l < 4; ++l) {
+            double x0 = x + 0.5 + (random.nextFloat() - 0.5) * 1.9D;
+            double y0 = y + 1.2 + (random.nextFloat() - 0.5) * 1.9D;
+            double z0 = z + 0.5 + (random.nextFloat() - 0.5) * 1.9D;
+            world.addParticle(ParticleList.POISON_P, x0, y0, z0, 0, 0, 0);
+        }
+
+
     }
     public void charge()
     {
